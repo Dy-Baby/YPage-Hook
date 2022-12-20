@@ -8,7 +8,7 @@ struct PageRecord {
 	DWORD protect;
 };
 static std::map<LPVOID, PageRecord> gs_pageHook_base;
-static std::map<LPVOID, PageHook&> gs_pageHook_addr;
+static std::map<LPVOID, YPageHook&> gs_pageHook_addr;
 static std::map<DWORD, PageRecord&> gs_pageHook_step;
 
 
